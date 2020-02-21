@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programador Full Stack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/atualizar/<%= id %>" method="post" name="form1">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" class="form-control" name="nome" id="nome" value="<%= nome %>" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="">Módulo</label>
+                <input type="text" class="form-control" name="modulo" id="modulo" aria-describedby="emailHelp" placeholder="modulo" value="<%= modulo %>">
+            </div>
+            <button type="submit" class="btn btn-info">Atualizar</button>
+        </form>
+    </div>
+</body>
+
+</html>
